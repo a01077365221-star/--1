@@ -1,0 +1,460 @@
+@charset "utf-8";
+
+/* 태블릿 해상도 서식 */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    
+
+
+/* 태블릿 메뉴 간격 조정 */
+.gnb > ul{
+  gap: 8px;
+}
+
+.gnb a{
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* 로그인, 회원가입, 검색 영역 */
+
+/* 태블릿 메뉴 간격 조정 */
+.gnb > ul{
+  gap: 10px;
+}
+
+.gnb a{
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* 로그인, 회원가입, 검색 영역 */
+
+/* 태블릿 헤더 */
+header .inner{
+  width: 96%;
+}
+
+/* 로고 */
+.logo{
+  width: auto;
+  flex-shrink: 0;
+}
+
+.logo img{
+  width: 110px;
+}
+
+/* 메인 메뉴 */
+.gnb{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.gnb > ul{
+  gap: 18px;
+}
+
+.gnb > ul > li{
+    padding: 0 13px;
+}
+
+.gnb a{
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* 로그인, 회원가입, 검색 */
+.util{
+gap: 12px;
+flex-shrink: 0;
+}
+
+.login_join{
+gap: 10px;
+white-space: nowrap;
+}
+
+.util a{
+font-size: 14px;
+white-space: nowrap;
+}
+
+.search_btn i{
+font-size: 17px;
+}
+
+/* 태블릿 검색창 길이 조절 */
+.search_box{
+  width: 0;
+  right: 35px;
+}
+
+.search_box input{
+  width: 180px;
+}
+
+#search_toggle:checked ~ .search_box{
+  width: 130px;
+}
+
+/* 태블릿 메인 비주얼 */
+.visual{
+    height: 650px;
+}
+
+.visual .tt01{
+    font-size: 110px;
+}
+
+.visual .tt02{
+    font-size: 110px;
+}
+
+.visual p{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* 태블릿 브랜드 소개 */
+.brand_intro{
+    height: auto;
+    min-height: 488px;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.brand_intro .inner{
+width: 88%;
+height:auto;
+gap: 20px;
+}
+
+.brand_text{
+  transform: none;
+width: 50%;
+box-sizing: border-box;
+}
+
+/* 태블릿 브랜드 소개 본문 */
+.brand_text p{
+  word-break: keep-all;
+  line-height: 1.8;
+}
+
+/* 태블릿 브랜드 이미지 */
+.brand_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+/* 태블릿 브랜드 소개 */
+
+.brand_img img{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  transform: none;
+}
+
+/* 태블릿 브랜드 제목 */
+.brand_text h2{
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+/* 4가지 기준 */
+.values .inner{
+    width: 94%;
+    margin: 0 auto;
+}
+
+
+/* 태블릿 4가지 기준 카드 글씨 크기 */
+.value_text h3{
+  font-size: 16px;
+}
+
+.value_text p{
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* 카드 슬라이드 영역 */
+.value_view{
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* 카드 크기 */
+.value_item{
+    flex: 0 0 335px;
+    height: 360px;
+    box-sizing: border-box;
+}
+
+
+/* 카드 이미지 */
+.value_img{
+    width: 100%;
+    height: 225px;
+}
+
+/* 좌우화살표 */
+.value_slide{
+    position: relative;
+}
+
+.value_slide .prev_btn{
+    left: 10px;
+}
+
+.value_slide .next_btn{
+    right: 10px;
+}
+
+/* 제목 중앙 정렬 */
+.values h2{
+    text-align: center;
+}
+
+/* 좌우화살표 위치 */
+.values .content_control{
+left: 20px; right: 20px;    
+}
+
+/* 유튜브 */
+.video {
+  height: auto;
+  min-height: 600px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+/* 제목 */
+.video_title{
+    padding-top: 60px;
+}
+.video_title h2{
+font-size: 18px;
+}
+
+.video_title p{
+    font-size: 14px;
+}
+
+/* 태블릿 연혁 영역 */
+.history .inner{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 태블릿 연혁 제목과 설명 */
+.history_title{
+  width: 100%;
+  text-align: center;
+  padding-top: 60px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.history_title h2,
+.history_title p{
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 태블릿 연혁 이미지 위치 */
+.history_img{
+  width: 85%;
+  max-width: 900px;
+  margin: 40px 0 0 7%;
+}
+
+.pc_history{
+  width: 100%;
+}
+
+.pc_history img{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/* 태블릿 매장 찾기 */
+.store{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center 40%;
+}
+
+.store_inner{
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.store_inner h2{
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.store_inner a{
+    display: block;
+    margin: -50px 0;
+    line-height: 0;
+}
+
+.store_inner img{
+  width: auto;
+  height: auto;
+    display: block;
+    max-width: 90%;
+    margin: 30px 0;
+}
+
+
+
+/* 태블릿 인스타그램 */
+.instagram{
+  width: 100%;
+  height: auto;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+/* 인스타그램 전체 영역 */
+.instagram .inner{
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* 인스타그램 제목 */
+.instagram_title{
+  width: 100%;
+  padding-top: 60px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+/* 태블릿 인스타그램 사진 목록 */
+.instagram_list{
+  width: 94%;
+  margin: 0 auto;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+
+/* 정사각형 사진 영역 */
+.instagram_list a{
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+/* 사진 */
+.instagram_list img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+/* 태블릿 가로 스크롤 방지 */
+html, body{overflow-x: hidden;
+}
+
+
+/* 태블릿 푸터 */
+footer{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 푸터 내부 영역 */
+footer > .inner{
+  width: 94%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* 푸터 회사 정보 */
+.footer_info{
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.footer_info p{
+  overflow-wrap: break-word;
+}
+
+/* 푸터 로고 및 SNS */
+.footer_right{
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 푸터 하단 저작권 영역 */
+.footer_bottom{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer_bottom .inner{
+  width: 94%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.footer_bottom p{
+  overflow-wrap: break-word;
+}
+
+/* 태블릿 탑버튼 크기 */
+.top_btn{
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+}

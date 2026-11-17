@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>창억떡 반응형웹에 오신것을 환영합니다.</title>
+<meta name="description" content="1965년 광주에서 시작된 창억떡. 정직한 재료와 전통의 기술로 이어가는 창억떡의 브랜드 이야기와 매장 정보를 만나보세요.">
+<meta name="keywords" content="떡, 디저트, 선물">
+<meta http-equiv="Subject" content="디저트, 떡">
+<meta http-equiv="Title" content="창억떡">
+<meta http-equiv="Build" content="2026-10-13">
+<!-- 파비콘 -->
+<link rel="shortcut icon" type="image/x-icon" href="./changok_image/favicon (2).ico">
+
+  <!-- 스와이프 슬라이드 서식 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css">
+  
+  <!-- 폰트어썸 라이브러리 연결하기 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Cormorant Garamond 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+
+  <!-- 메탈 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
+
+  <!-- 마루부리 -->
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
+
+<!-- 노트산스 kr -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- css 초기화 -->
+  <link href="./css/css_reset.css" rel="stylesheet"  type="text/css">
+
+<!-- css common -->
+  <link rel="stylesheet" href="./css/common.css"  type="text/css">
+
+<!-- pc해상도 적용 서식 1025이상 -->
+ <link rel="stylesheet" href="./css/pc.css" type="text/css">
+
+<!-- tablet해상도 적용 서식 768-1024 -->
+ <link rel="stylesheet" href="./css/tablet.css
+ " type="text/css">
+
+<!-- mobile해상도 적용 서식 767까지 -->
+ <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+
+</head>
+<body>
+  <div id="wrap">
+    <input type="checkbox" id="toggle">
+  <!-- 헤더영역 시작 -->
+  <header>
+  <div class="inner">
+    <h1 class="logo">
+    <a href="index.html" title="메인페이지로 바로가기"><img src="./changok_image/logo_white.png" alt="로고"></a></h1>
+
+    <!-- 모바일, 태블릿에서 나타나는 메뉴, 버튼(토글) -->
+    <label for="toggle"><i class="fas fa-bars"></i></label>
+
+    <i class="fas fa-user mobile_user"></i>
+
+    <nav class="gnb">
+    <!-- 닫기버튼 -->
+    <label for="toggle"><i class="fas fa-times"></i></label> 
+
+    <h2 class="mobile_logo"><a href="index.html"><img src="./changok_image/logo_white.png" alt="logo"></a></h2>
+
+    <!--  모바일 검색창 -->
+      <div class="mobile_search"><input type="text" placeholder=""><i class="fas fa-search"></i></div>
+
+      <ul>
+        <li><a href="#">매장 안내<i class="fas fa-angle-down"></i></a>
+        <ul class="submenu">
+          <li><a href="#" title="">매장 찾기</a></li>
+        </ul>
+      </li>
+        
+        <li><a href="#">온라인 주문<i class="fas fa-angle-down"></i></a>
+        <ul class="submenu">
+          <li><a href="#" title="주문하기">주문하기</a></li>
+        </ul>
+      </li>
+
+        <li><a href="#">브랜드 소개<i class="fas fa-angle-down"></i></a>
+          <ul class="submenu">
+          <li><a href="#" title="연혁">연혁</a></li>
+          <li><a href="#" title="창억떡 이야기">창억떡 이야기</a></li>
+          <li><a href="#" title="기술과 품질">기술과 품질</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">창억 소식<i class="fas fa-angle-down"></i></a>
+          <ul class="submenu">
+          <li><a href="#" title="공지사항">공지사항</a></li>
+          <li><a href="#" title="이벤트">이벤트</a></li>
+          <li><a href="#" title="고객후기">고객후기</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">고객센터<i class="fas fa-angle-down"></i></a>
+          <ul class="submenu">
+          <li><a href="#" title="자주묻는질문">자주묻는질문</a></li>
+          <li><a href="#" title="1:1문의">1:1문의</a></li>
+          <li><a href="#" title="단체주문">단체주문</a></li>
+          </ul></li>
+      </ul>
+
+
+    <!-- 모바일 sns -->
+    <div class="mobile_sns">
+      <a href="https://www.instagram.com/changeok_official/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+      <a href="https://www.youtube.com/@changeok_offical" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+        </nav>
+
+    <div class="util">
+
+      <div class="login_join">
+      <a href="#">로그인</a>
+      <a href="#">회원가입</a>
+      </div>
+      <!-- 체크박스 안보이게, search_toggle로 연결. -->
+      <input type="checkbox" id="search_toggle">
+      <label for="search_toggle" class="search_btn">
+      <i class="fa-solid fa-magnifying-glass"></i></label>
+
+    <div class="search_box">
+    <input type="text" placeholder="검색어를 입력하세요">
+</div>
+    </div>
+  </div>
+
+  </header>
+  
+
+  <main>
+    <!-- 메인 비주얼 -->
+    <section class="visual">
+      <div class="swiper">
+                <button class="prev_btn">
+          <img src="./changok_image/main_left.png" alt="이전">
+        </button>
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <img src="./changok_image/mainsmall2.jpg" alt="사진"   fetchpriority="high">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./changok_image/mainsmall03.jpg" alt="사진">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./changok_image/mainsmall.jpg" alt="사진">
+        </div>
+        </div>
+
+          <!-- 메인 비주얼 글자 -->
+
+
+        <div class="visual_text">
+        <h2><span class="tt01">Since</span> <span class="tt02">1965</span></h2>
+        <p>
+        "좋은 재료에 남보다 더 많은 돈을 써라.<br>
+        내 가족, 내 아이가 먹을 음식이고<br>
+        이웃이 함께 나눌 음식이니까.<br>
+        이윤보다 정(情)을 나눌 때,<br>
+        비로소 음식이 좋은 음식이 된다."
+  </p>
+</div>
+
+        <button class="next_btn">
+          <img src="./changok_image/main_right.png" alt="다음">
+        </button>
+
+
+        <div class="visual_control">
+        <button class="active" aria-label="첫 번째 슬라이드 보기" aria-current="true"></button>
+        <button aria-label="두 번째 슬라이드 보기"></button>
+        <button aria-label="세 번째 슬라이드 보기"></button>
+</div>
+
+      </div>
+    </section>
+
+    <!-- 브랜드 소개(창업주철학) -->
+    <section class="brand_intro">
+      <div class="inner">
+      <div class="brand_text">
+        <h2>광주에서 시작된 마음, 창억</h2>
+        
+<p>
+  창억떡은 1965년, 광주 동명동의 도내기 시장 한켠에서 시작되었습니다.
+  창업주는 매일 새벽, 직접 떡을 빚으며 ‘가족이 먹을 수 있을 만큼
+  정직한 재료로 만들자’는 신념을 지켜왔습니다.
+</p>
+
+
+
+<a href="#" class="more_btn">창억의 기술력 &#8594;</a>
+      </div>
+
+      <div class="brand_img">
+        <img src="./changok_image/oldpicture.png" alt="창억옛날사진">
+      </div>
+      </div>
+
+    </section>
+
+    <!-- 창억의 4가지 기준 -->
+    <section class="values">
+      <div class="inner">
+
+        <h2>창억이 지켜가는<br>4가지 기준</h2>
+        <div class="value_slide"> <!-- 버튼 + 카드 영역 전체를 묶는 상자 -->
+
+        <button class="prev_btn">
+          <img src="./changok_image/left.png" alt="이전">
+        </button>
+
+        <div class="value_view"> <!--실제 카드가 보이는 창-->
+
+        <div class="value_list"> <!--카드 4장 가로로 나열하는 줄-->
+
+          <div class="value_item"> <!--카드 하나-->
+            <div class="value_text">
+            <h3>1. Clean Ingredient(첨가물 최소화)</h3>
+            <p>자연에 가까운 재료 사용으로<br>건강하고 정직한 떡 제조</p>
+            </div>
+            <div class="value_img">
+              <img src="./changok_image/value(1).png" alt="창억기준">
+            </div> 
+          </div>
+
+          <div class="value_item">
+            <div class="value_text">
+            <h3>2. Local Goodness(지역 상생)</h3>
+            <p>지역 특산물의 맛과 가치를 살려<br>지속 가능한 먹거리 생태계 구축</p>
+            </div>
+            <div class="value_img">
+              <img src="./changok_image/value(2).png" alt="창억기준">
+            </div>            
+          </div>
+
+          <div class="value_item">
+            <div class="value_text">
+            <h3>3. Modern Heritage(전통과 현대의 조화)</h3>
+            <p>세련된 포장과 간편한 배송으로<br>전통의 가치를 일상 속으로 확산</p>
+            </div>
+            <div class="value_img">
+              <img src="./changok_image/value(3).png" alt="창억기준">
+            </div>
+          </div>
+
+          <div class="value_item">
+            <div class="value_text">          
+            <h3>4.Sustainable Choice(지속 가능한 선택)</h3>
+            <p>포장 최소화, 냉동보관 유통 등<br>환경을 생각하는 생산과 소비 지향</p>
+            </div>  
+            <div class="value_img">
+              <img src="./changok_image/value(4).png" alt="창억기준">
+            </div>
+          </div>
+
+      </div>
+      </div>
+        <button class="next_btn">
+          <img src="./changok_image/right.png" alt="다음">
+        </button>
+<div class="content_control">
+  <button class="active" aria-label="첫번째"></button>
+  <button aria-label="두번째"></button>
+  <button aria-label="세번째"></button>
+  <button aria-label="네번째"></button>
+</div>
+      </div>
+      </div>
+    </section>
+
+    <!-- 유튜브 -->
+    <section class="video">
+      <div class="youtube_inner">
+        <div class="video_title">
+          <h2>떡루랄라</h2>
+          <p>창억떡 홍보 콘텐츠 영상입니다.</p>
+        </div>
+
+        <div class="youtube">
+<iframe
+  src="https://www.youtube-nocookie.com/embed/BqAwTxUqEkI"
+  title="창억떡 소개 영상"
+  loading="lazy"
+  allowfullscreen>
+</iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 연혁 -->
+    <section class="history">
+      <div class="inner">
+      <div class="history_title"> 
+        <h2>창억의 성장 이야기</h2>
+        <p>작은 떡집에서 전국 브랜드로, 반세기 동안 걸어온 길<br> <br>
+        시장의 작은 가게로 시작했지만, 창억떡은 60년 넘게 ‘정직한 떡’ 하나만을 바라보며 성장해왔습니다.<br>
+        지금은 오프라인 매장, 온라인몰, 홈쇼핑, 기업 납품까지 다양한 유통채널을 통해<br>
+        더 많은 사람들이 창억떡을 경험할 수 있게 되었습니다.</p>
+      </div>
+
+      <div class="history_img">
+        <img class="pc_history" src="./changok_image/연혁.png" alt="연혁디자인">
+        <img class="mobile_history" src="./changok_image/mobilehistoryimg.png" alt="연혁디자인">
+      </div>
+      </div>
+
+    </section>
+
+    <!-- 매장 찾기 -->
+    <section class="store">
+      <div class="store_inner">
+        <h2>가까운 매장에서 제품을 만나보세요</h2>
+        <a href="#" title="이동"><img src="./changok_image/arrow_right.png" alt="다른페이지로이동버튼"></a>
+      </div>
+    </section>
+    
+    <!-- 인스타그램 -->
+    <section class="instagram">
+      <div class="inner">
+        <div class="instagram_title">
+          <h3><a href="https://www.instagram.com/changeok_official/"> @changok_official</a></h3>
+        </div>
+        <div class="instagram_list">
+          <a href="https://www.instagram.com/p/DV-uNCGjB42/?stkn=Y3oxMDR1eHRxd2Zy" target="_blank"><img src="./changok_image/insta1번.png" alt="떡사진1"><span class="insta_text">봄 향기 가득한<br> 쑥콩설기</span></a>
+
+          <a href="https://www.instagram.com/p/DX8Vn0qjCmU/?stkn=bXJhNzhzbWhkN2o5
+          " target="_blank"><img src="./changok_image/insta2번.png" alt="떡사진2"><span class="insta_text">입하, 쑥 구름떡으로<br>
+원기회복!</span></a>     
+          
+          <a href="https://www.instagram.com/p/DXx0zUFDWkh/?stkn=MXAwd3F4OTAwdW91Mg==" target="_blank"><img src="./changok_image/insta3번.png" alt="떡사진3"><span class="insta_text">우리 아이를 위한<br> 백설기 한 조각</span></a>      
+          
+          <a href="https://www.instagram.com/p/DWpnpsoAWtC/?stkn=aDNqdGN2ZmM2NXdv" target="_blank"><img src="./changok_image/insta4번.png" alt="떡사진4"><span class="insta_text"> 벚꽃 피는 계절, <br>꿀떡처럼 달달하게</span></a> 
+          
+          <a href="https://www.instagram.com/p/DPyKw1JAOEj/?stkn=ODF2eXJqdjk4YTU=" target="_blank"><img src="./changok_image/insta5번.png" alt="떡사진5"><span class="insta_text">자연 그대로의 재료,<br> 건강한 맛</span></a>  
+          
+          <a href="https://www.instagram.com/p/DU64HATE1gV/?stkn=MWY2NGFkODJsamxydA==" target="_blank"><img src="./changok_image/insta6번.png" alt="떡사진6"><span class="insta_text">영양도 맛도 가득한<br> 창억 구름떡</span></a>  
+
+          <a href="https://www.instagram.com/p/DVAG6psEt04/?stkn=ajNzbXdkZjRmMHRp" target="_blank"><img src="./changok_image/insta7번.png" alt="떡사진7"><span class="insta_text">양옆에 앙금이 가득,<br> 이북식인절미</span></a>  
+
+          <a href="https://www.instagram.com/p/DPfLOE9Egza/?stkn=bTFjODFmdmE3eGty" target="_blank"><img src="./changok_image/insta8번.png" alt="떡사진8"><span class="insta_text"> 한 입에 담은 <br>녹두의 고소함과<br> 통밤의 달큰함</span></a>            
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  
+<footer>
+  <div class="inner">
+
+
+    <!-- 회사 정보 -->
+    <div class="footer_info">
+      <p>주식회사 창억 | 대표자 : 000</p>
+
+      <p>
+        사업장 주소 : 광주광역시 북구 경열로 242&nbsp;&nbsp;
+        사업자등록번호 : 000-00-00000&nbsp;&nbsp;
+        전화 : 000-000-0000&nbsp;&nbsp;
+        팩스 : 000-000-0000
+      </p>
+
+      <p>
+        통신판매업신고 : 0000-광주북구-0000[사업자정보확인]
+      </p>
+
+      <p>
+        개인정보관리책임자 : 000&nbsp;&nbsp;
+        E-mail : test@naver.com&nbsp;&nbsp;
+        호스팅 제공 : 카페24(주)
+      </p>
+    </div>
+
+    <!-- 탑버튼 -->
+    <a href="#" title="클릭시맨위로"><i class="fas fa-angle-up top_btn" aria-hidden="true"></i></a>
+
+    <!-- 오른쪽 영역 -->
+    <div class="footer_right">
+
+      <!-- 로고 -->
+      <h2 class="footer_logo">
+        <a href="index.html">
+          <img src="./changok_image/보라색가로로고.png" alt="창억떡로고">
+        </a>
+      </h2>
+
+      <!-- SNS -->
+      <div class="footer_sns">
+
+        <a href="https://www.instagram.com/changeok_official/" target="_blank" title="인스타그램">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@changeok_offical" target="_blank" title="유튜브">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="mailto:test@naver.com" title="메일">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- 저작권 -->
+  <div class="footer_bottom">
+    <div class="inner">
+      <p>Copyright © 2026 창억떡. All Rights Reserved.</p>
+    </div>
+  </div>
+
+</footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+<script src="./script/main.js"></script>
+
+
+</body>
+</html>
+

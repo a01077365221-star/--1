@@ -1,0 +1,650 @@
+@charset "utf-8";
+
+/* 모바일 해상도에 적용되는 서식 */
+@media screen and (max-width:767px) {
+
+  html, body{
+    overflow-x: hidden;
+  }
+
+  .gna a, .gnb a:hover{
+    text-decoration: none;
+  }
+  
+  /* 전체 영역 */
+  .inner{
+    width: 100%;
+    margin: 0;
+  }
+
+  /* 헤더 */
+  header{
+    width: 100%;
+  }
+
+  header .inner{
+    position: relative;
+  }
+
+  header::after{
+    display: none;
+  }
+
+/* 로고 */
+  header .logo{
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  header .logo img{
+    width: 130px;
+    height: 46px;
+    padding-top: 20px;
+  }
+
+  /* 햄버거 버튼 */
+header .inner > label[for="toggle"]{
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 35px;
+  font-size: 22px;
+  color: white;
+  z-index: 9001;
+
+  transition: 0.3s;
+}
+
+  /* 모바일 메뉴 */
+  .gnb{
+    width: 100%;
+    height: 100%;
+    background-color: #541B84;
+
+    position: fixed;
+    top: 0;
+    left: -100%;
+
+    z-index: 9999;
+
+    transition: 0.5s;
+    transform: none;
+  }
+
+  
+
+  /* 체크하면 메뉴 등장 */
+  #toggle:checked + header .gnb{
+    left: 0;
+  }
+
+  /* 메뉴 닫기 버튼 */
+  .gnb > label[for="toggle"]{
+    display: block;
+    position: absolute;
+    top: 33px;
+    left: 15px;
+
+    color: white;
+    font-size: 22px;
+    z-index: 9001;
+
+  /* 토글버튼 열고 닫을 때 아이콘 애니메이션효과 */
+    transform: rotate(180deg);
+    transition: 0.9s;
+  }
+    /* 체크하면 메뉴 등장 */
+  #toggle:checked + header .gnb > label[for="toggle"]{
+    transform: rotate(0deg);
+  }
+
+  /* pc전용 유틸 숨기기 */
+  header .util{
+    display: none;
+  }
+
+  .prev_btn,
+  .next_btn{display:none;}
+
+  /* 모바일 사람 아이콘 */
+  .mobile_user{
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 35px;
+
+    color: white;
+    font-size: 22px;
+    z-index: 1000;
+  }
+
+  /* 메뉴가 열리면 사람 아이콘 숨기기 */
+  #toggle:checked + header .mobile_user{
+    display: none;
+  }
+
+#toggle:checked + header .inner > label[for="toggle"]{
+  opacity: 0;
+  transition: 0.3s;
+}
+
+
+  /* 모바일 메뉴 로고 */
+  .mobile_logo{
+    position: absolute;
+    bottom: 20px;
+    left: 28px;
+    display: block;
+  }
+
+  .mobile_logo img{
+    width: 120px;
+  }
+
+  /* 모바일 폰트 */
+  .tt01{
+    font-size: 95px;
+  }
+  .tt02{
+    font-size: 100px;
+  }
+
+  .visual_text p{
+    font-size: 13px;
+    line-height: 23px;
+    white-space: nowrap;
+    margin-top: 20px;
+  }
+
+
+.gnb:hover .submenu{
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+/* 모바일 메뉴 목록 */
+.gnb > ul{
+  display: block;
+  padding-top: 180px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.gnb > ul > li{
+  margin-bottom: 30px;
+}
+
+.gnb > ul > li > a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.gnb > ul > li > a i{
+  font-size:  14px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.gnb > ul > li > a i.fa-angle-down{
+  display: block;
+}
+
+
+.gnb > ul > li.open .submenu{
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  padding-top: 15px;
+}
+
+.gnb > ul > li.open .submenu li{
+  padding: 8px 0;
+  text-align: left;
+}
+
+.gnb > ul > li.open .submenu li a{
+  font-size: 15px;
+  color: #fff;
+}
+
+.gnb > ul > li.open > a i{
+  transform: rotate(180deg);
+}
+
+.submenu{
+  position: static;
+  transform: none;
+  width: auto;
+  margin: 0;
+}
+
+.top_btn{
+  right: 15px;
+  bottom: 20px;
+  font-size: 18px;}
+
+#toggle:checked ~ footer .top_btn{
+  display: none;
+}
+
+/* 모바일 검색창 */
+
+.mobile_search{
+  position: absolute;
+  top: 90px;
+  left: 30px;
+  right: 30px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.mobile_search input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  margin-left: 15px;
+
+}
+
+.mobile_search input::placeholder{
+  color: #fff;
+}
+
+.mobile_search i{
+  color: #fff;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+/* 모바일 sns */
+.mobile_sns{
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.mobile_sns a{
+  color: #fff;
+  font-size: 22px;
+}
+
+/* 브랜드 소개 */
+.brand_intro{
+  height: auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.brand_intro .inner{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.brand_text{
+  width: 100%;
+  text-align: center;
+  order: 2;
+  margin-top: 20px;
+  transform: none;
+}
+
+.brand_text h2{
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.brand_text p{
+  font-size: 15px;
+  line-height: 1.8;
+    letter-spacing: 0;
+  word-break: keep-all;
+}
+
+.brand_img{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 10px;
+  order: 1;
+}
+
+.brand_img img{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  transform: none;
+}
+
+/* 창억이 지켜가는 4가지 기준 */
+.values{
+  height: auto;
+  padding: 60px 20px; 
+  box-sizing:border-box;
+}
+
+.values h2{
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 30px
+}
+
+.value_text > h3{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.value_text > p{
+  font-size: 15px;
+}
+
+.value_item{
+  flex: 0 0 320px;
+  height: 310px;
+}
+
+.value_text{
+  height: 130px;
+}
+
+.value_img{
+  width: 320px;
+  height: 180px;
+}
+
+/* 화살표, 컨트롤 숨기기 */
+.value_slide .prev_btn,
+.value_slide .next_btn{
+  display: none;
+}
+
+.content_control button:nth-child(3),
+.content_control button:nth-child(4){
+  display: inline-block;
+}
+
+/* 카드 1개씩 보이게 */
+.value_view{
+  width: 320px;
+  margin: 0 auto;
+}
+
+
+
+/* 유튜브 영역 */
+.video {
+  height: auto;
+  min-height: 0;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+/* 유튜브 제목 */
+.video_title {
+  padding-top: 0;
+}
+
+.video_title h2{
+  font-size: 18px;
+}
+
+.video_title p{
+  font-size: 15px;
+}
+
+/* 유튜브 영상 */
+.youtube {
+  width: 85%;
+  max-width: 820px;
+  aspect-ratio: 16 / 9;
+  margin: 20px auto 0;
+}
+
+.youtube iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+/* 창억 연혁 */
+
+.pc_history{
+  display: none;
+}
+
+.mobile_history{
+  display: block;
+  width: 100%;
+}
+
+.history_img{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.history_title{
+  padding-top: 60px;
+  font-weight: 600;
+}
+
+.history_title h2{
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+.history_title p{
+  font-size: 14px;
+  line-height: 1.7;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* 매장찾기 */
+.store{
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.store_inner{
+width: 100%;
+height: 260px;
+padding-top: 0;
+box-sizing: border-box;
+justify-content: center;
+align-items: center;
+}
+
+.store_inner h2{
+  font-size: 20px;
+  text-align: center;
+}
+
+.store_inner img{
+  width: 60%;
+  height: auto;
+  margin-left: 30px;
+}
+
+/* 인스타그램 영역 */
+.instagram{
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.instagram_title{
+  padding-top: 50px;
+}
+
+.instagram_title h3{
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.instagram_list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.instagram_list a{
+  display: block;
+  width: calc(50% - 4px);
+  flex: 0 0 calc(50% - 4px);
+  box-sizing: border-box;
+}
+
+.instagram_list img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+/* 마우스오버 제거 */
+.instagram_list img:hover{
+  transform: none;
+  filter: none;
+  cursor: default;
+}
+/* 모바일 푸터 */
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px 20px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* 푸터 기본 영역 */
+footer > .inner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+/* 로고와 SNS */
+.footer_right {
+  order: 1;
+  position: static;
+  transform: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.footer_logo {
+  margin: 0;
+}
+
+.footer_logo img {
+  display: block;
+  width: 130px;
+  height: auto;
+  transform: none;
+}
+
+.footer_sns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 회사 정보 */
+.footer_info {
+  order: 2;
+  width: 100%;
+  height: auto;
+  margin: 0 0 25px;
+  transform: none;
+  font-size: 11px;
+  line-height: 1.8;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+
+.footer_info p {
+  height: auto;
+  margin: 0 0 10px;
+  font-size: 11px;
+  line-height: 1.8;
+  letter-spacing: 0;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+
+/* 탑 버튼은 기존 위치 유지 */
+footer .top_btn {
+  order: 3;
+}
+
+/* 하단 구분선과 카피라이트 */
+.footer_bottom {
+  position: static;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer_bottom .inner {
+  width: 100%;
+  height: auto;
+  min-height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.footer_bottom p {
+  margin: 0;
+  padding: 15px 0;
+  font-size: 10px;
+  line-height: 1.8;
+  color: #777;
+  text-align: center;
+}
+
+}
